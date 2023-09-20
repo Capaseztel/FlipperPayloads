@@ -1,5 +1,5 @@
 import os 
-theme = str(os.system("gsettings get org.gnome.desktop.interface gtk-theme"))
+theme = str(os.popen("gsettings get org.gnome.desktop.interface gtk-theme"))
 if "dark" in theme:
     print("dark")
 else:
