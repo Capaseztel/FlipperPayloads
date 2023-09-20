@@ -22,6 +22,9 @@ os.system("cd Imágenes && wget --output-document=pikmin.jpg https://pbs.twimg.c
 if ubuntu_version.startswith("20") == True:
     os.system(f"gsettings get org.gnome.desktop.background picture-uri file:///home/{user}/Imágenes/pikmin.jpg")
 elif ubuntu_version.startswith("22") ==True:
-    theme = os.system("gsettings get org.gnome.desktop.interface gtk-theme")
-    print(theme)
+    theme = str(os.popen("gsettings get org.gnome.desktop.interface gtk-theme"))
+    if "dark" in theme.lower():
+        os.system(f"gsettings get org.gnome.desktop.background picture-uri-dark file:///home/{user}/Imágenes/pikmin.jpg")
+    else:
+        os.system(f"gsettings get org.gnome.desktop.background picture-uri file:///home/{user}/Imágenes/pikmin.jpg")
 
