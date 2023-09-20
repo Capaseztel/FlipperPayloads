@@ -20,11 +20,11 @@ user = getpass.getuser()
 print("user = " + user)
 os.system("cd Imágenes && wget --output-document=pikmin.jpg https://pbs.twimg.com/media/EYzIYbcXgAAf3Gp.jpg")
 if ubuntu_version.startswith("20") == True:
-    os.system(f"gsettings get org.gnome.desktop.background picture-uri file:///home/{user}/Imágenes/pikmin.jpg")
+    os.system(f"gsettings set org.gnome.desktop.background picture-uri file:///home/{user}/Imágenes/pikmin.jpg")
 elif ubuntu_version.startswith("22") ==True:
-    theme = str(os.popen("gsettings get org.gnome.desktop.interface gtk-theme"))
+    theme = str(os.popen("gsettings get org.gnome.desktop.interface gtk-theme").read())
     if "dark" in theme.lower():
-        os.system(f"gsettings get org.gnome.desktop.background picture-uri-dark file:///home/{user}/Imágenes/pikmin.jpg")
+        os.system(f"gsettings set org.gnome.desktop.background picture-uri-dark file:///home/{user}/Imágenes/pikmin.jpg")
     else:
-        os.system(f"gsettings get org.gnome.desktop.background picture-uri file:///home/{user}/Imágenes/pikmin.jpg")
+        os.system(f"gsettings set org.gnome.desktop.background picture-uri file:///home/{user}/Imágenes/pikmin.jpg")
 
