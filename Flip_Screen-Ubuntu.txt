@@ -1,0 +1,7 @@
+CTRL-ALT t
+DELAY 600
+STRINGLN xrandr -o inverted
+DELAY 200
+STRINGLN history -c
+DELAY 200
+CTRL d

