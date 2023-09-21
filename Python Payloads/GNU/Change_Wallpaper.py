@@ -22,7 +22,7 @@ print("user = " + user)
 os.system("cd Imágenes && wget --output-document=pikmin.jpg https://pbs.twimg.com/media/EYzIYbcXgAAf3Gp.jpg")
 
 while True:
-    if ubuntu_version.startswith("20") == True:
+    if ubuntu_version.startswith("20") or ubuntu_version.startswith("21") == True:
         os.system(f"gsettings set org.gnome.desktop.background picture-uri file:///home/{user}/Imágenes/pikmin.jpg")
     elif ubuntu_version.startswith("22") ==True:
         theme = str(os.popen("gsettings get org.gnome.desktop.interface gtk-theme").read())
