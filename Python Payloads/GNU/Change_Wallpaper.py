@@ -27,4 +27,3 @@ elif ubuntu_version.startswith("22") ==True:
         os.system(f"gsettings set org.gnome.desktop.background picture-uri-dark file:///home/{user}/Imágenes/pikmin.jpg")
     else:
         os.system(f"gsettings set org.gnome.desktop.background picture-uri file:///home/{user}/Imágenes/pikmin.jpg")
-
