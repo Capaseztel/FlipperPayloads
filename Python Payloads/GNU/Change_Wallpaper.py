@@ -2,6 +2,9 @@ import os
 import getpass
 import time
 
+# (WillyMuñeca) img = "https://pbs.twimg.com/media/EYzIYbcXgAAf3Gp.jpg"
+img = "https://media.discordapp.net/attachments/915706659366658128/1149795081268764723/yo.jpg?width=578&height=585" #Polilla
+
 def get_ubuntu_version():
     try:
         with open('/etc/os-release', 'r') as os_release_file:
@@ -19,7 +22,7 @@ ubuntu_version = get_ubuntu_version()
 
 user = getpass.getuser()
 print("user = " + user)
-os.system("cd Imágenes && wget --output-document=pikmin.jpg https://pbs.twimg.com/media/EYzIYbcXgAAf3Gp.jpg")
+os.system(f"cd Imágenes && wget --output-document=pikmin.jpg {img}")
 
 while True:
     if ubuntu_version.startswith("20") or ubuntu_version.startswith("21") == True:
