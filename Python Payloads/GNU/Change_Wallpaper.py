@@ -3,7 +3,7 @@ import getpass
 import time
 
 # (WillyMuñeca) img = "https://pbs.twimg.com/media/EYzIYbcXgAAf3Gp.jpg"
-img = "https://media.discordapp.net/attachments/915706659366658128/1149795081268764723/yo.jpg?width=578&height=585" #Polilla
+img = "https://avatars.githubusercontent.com/u/106451459?v=4" #Polilla
 
 def get_ubuntu_version():
     try:
