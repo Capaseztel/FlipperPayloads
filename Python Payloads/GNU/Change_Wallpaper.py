@@ -2,8 +2,8 @@ import os
 import getpass
 import time
 
-# (WillyMuñeca) img = "https://pbs.twimg.com/media/EYzIYbcXgAAf3Gp.jpg"
-img = "https://avatars.githubusercontent.com/u/106451459?v=4" #Polilla
+img = "https://pbs.twimg.com/media/EYzIYbcXgAAf3Gp.jpg"
+# img = "https://avatars.githubusercontent.com/u/106451459?v=4" #Polilla
 
 def get_ubuntu_version():
     try:
